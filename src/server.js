@@ -35,7 +35,7 @@ app.get('/movie', function getMovies (req, res)  {
     );
   }
   if (req.query.avg_vote){
-    reply = rely.filter(film => 
+    reply = reply.filter(film => 
       Number(film.avg_vote) >= Number(req.query.avg_vote)
     );
   }
